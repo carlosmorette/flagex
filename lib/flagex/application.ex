@@ -8,7 +8,8 @@ defmodule Flagex.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      Flagex.Repo
+      Flagex.Repo,
+      Flagex.Feature.Cache
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
