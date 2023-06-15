@@ -6,7 +6,7 @@ defmodule Flagex do
   end
 
   def insert_feature!(name, description) do
-    Feature.insert_disabled!(name, description)
+    Feature.insert_feature!(name, description)
   end
 
   def enable_feature!(name) do
